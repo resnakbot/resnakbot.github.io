@@ -1,0 +1,212 @@
+!8ball
+        Magic 8 Ball.
+        Ask a question like "!8ball Will I ever lose my virginity?"
+!addautoreply
+        Create a new Auto Reply.
+        Auto Replies are used to have the bot automatically reply whenever it sees someone say something.
+        Format 1: !addautoreply <Regular Expression>
+            This is the first step to adding the autoreply. If the <Regular Expression> value is a valid
+            Regular Expression, the bot will add it and return an ID number. This should be followed with
+            Format 2 using the provided ID number to add the reply.
+        Format 2: !addautoreply <ID number> <Reply text>
+            This completes adding the autoreply by setting the reply text. This format can also be used
+            to update an existing autoreply.
+!addnewssource
+        Add an RSS feed as a news source.
+        Format: !addnewssource name http://news.source.url/feed.rss
+!addquickreply
+        Create a new Quick Reply.
+        Quick Replies are used to give quick answers to commonly asked questions.
+        Format: !addquickreply trigger This is the text of the quick reply.
+!bewbies
+        Alias for !boobies
+!bewbiez
+        Alias for !boobies.
+!bitcoin
+        Alias for !btc
+!boobies
+        Get a random image from the subreddit /r/Boobies
+!boobiesnail
+        Get kloaknet's favorite image.
+!boobiesnails
+        Get kloaknet's favorite image.
+!boobs
+        Alias for !boobies
+!btc
+        Get the current value of Bitcoin in USD.
+!butts
+        Alias for !img ass (the butts subreddit isn't as good as the ass subreddit)
+!chuck
+        Get a random Chuck Norris joke.
+!colors
+        Get an example of all of the colors possible for text in IRC.
+!commands
+        Alias for !help
+!ctof
+        Convert Celsius to Fahrenheit
+!deletenewssource
+        Delete a quick reply.
+        Format: !deletenewssource name
+!deletequickreply
+        Remove a quick reply.
+        Format: !deletequickreply trigger
+!editquickreply
+        Edit an existing quick reply.
+        Format 1: !editquickreply name
+             This will just echo what the current quick reply text.
+        Format 2: !editquickreply name The text of the quick reply.
+        This will just replace the current quick reply text with the new text.
+!fact
+        Get a random fact from randomfunfacts.com
+!ftoc
+        Convert Fahrenheit to Celsius
+!hawaii
+        How long until longveiw and his new wife go to Hawaii?
+        BTW, they went back in 2014 so this is just a relic.
+!help
+        Get this help.
+!image
+        Get an image from a given subreddit.
+        Format: !image subredditname
+        Example: !image ramen
+!imdb
+        Search for info on a movie from imdb.com
+        Format: !imdb Movie Title
+!img
+        Alias for !image
+!imgur
+        Get a random image from a given subreddit from imgur.
+        No longer works for nsfw subreddits
+        Format: !imgur subredditname
+        Example: !imgur snails
+        !insult
+        Tell Korrok to insult someone.
+        Format: !insult nickname
+!invite
+        Request an invite to join the #nzbs.in channel.
+        Format: !invite <irc_key>
+        Example: !invite a1s2d3f4g5h6l0k9j8h7g6
+!join
+        Tell the bot to join a channel.
+        Format: !join #channelname
+!kick
+        Tell the bot to kick someone from a channel.
+        Format !kick nickname
+!kmtom
+        Convert kilometers to miles
+!lastsaid
+        What was the last thing the bot heard someone with the given nickname say?
+        Format: !lastsaid nickname
+!lastseen
+        When was the last time the bot saw someone with the given nickname?
+        Format: !lastseen nickname
+!lastspoke
+        When was the last time the bot saw someone with the given nickname speak in a channel?
+        !Format: !lastspoke nickname
+!leave
+        Tell the bot to leave a given channel.
+        Format: !leave #channelname
+!logverbose
+        Tell the bot to start logging more data (for debugging)
+!mtokm
+        Convert miles to kilometers
+!news
+        Get the first few articles from a given news source.
+        Format 1: !news
+            Gets the first 3 articles from whatever is marked as the default news source.
+        Format 2: !news newssourcename
+            Gets the first 3 articles
+        Format 3: !news [number] newssourcename
+            Gets the first [number] articles.
+            If the number is more than 5, the result will be sent in a private message
+        Format 4: !news list
+            Gets a list of the available news sources.
+!nick
+        Tell the bot to change its nickname.
+                Format: !nick nickname
+!quit
+        Tell the bot to quit leave all channels and disconnect from the server.
+!redditimage
+        Get a random image from a given subreddit.
+        Replacement for imgur to get nsfw content.
+        Format: !redditimage subredditname
+        Example: !redditimage butts
+!role
+        What is the given user's role on nzbs.in?
+        Format: !role [nzbs.in login username]
+!roll
+        Roll a regular 6-sided die.
+!roulette
+        Play Russian Roulette. If you get shot, you get kicked from the channel. (If the bot is op in the channel)
+        Format: !roulette
+!s
+        Alias for !search.
+!say
+        Tell the bot to say something in the given channel
+        Format: !say channel Message
+        Example: !say #nzbs.in Hey longveiw, I hope you had fun in Hawaii!
+!search
+        Search nzbs.in
+        Format 1: !search <category|subcategory> <search string>
+            Example: !search TV|HD Game of Thrones
+        Format 2: !search <search string>
+            Example: !search Game of Thrones
+        To view the available categories, use '!search categories'
+!seen
+        Alias for !lastseen
+!sendnzb
+        Send an NZB to your download client (if you're registered with the bot).
+        Format 1: !sendnzb Search terms
+            Example: !sendnzb The Matrix 1999
+            The first result will be sent
+        Format 2: !sendnzb nzbguid
+            Example: !sendnzb a6a87465f051fea718533ae4917eac6a
+            Send a specific nzb. The guid can be obtained by using the !search command.
+        Format 2: !sendnzb reset
+            Reset your own sendnzb information (aka, delete your user information)
+!slap
+        Tell the bot to slap someone with something unpleasant
+!snailtit
+        Get kloaknet's favorite image
+!snailtits
+        Get kloaknet's favorite image
+!status
+        Get the status of nzbs.in
+!stock
+        Get stock market info for a given ticker symbol
+!time
+        Get the current time for a given location
+        Format: !time [location]
+        Example: !time 90210
+        Example: !time London
+        Example: !time Svolvær
+!toss
+        Flip a coin.
+!translate
+        Translate some text.
+        Format 1: !translate <text to translate>
+            Translates whatever the text is to English
+            Example: !translate Bonjour, je m'appelle Korrok.
+        Format 2: !translate <target language code> <text to translate>
+            Translates the text to the target language
+            Example: !translate fr Hello, my name is Korrok.
+        Format 3: !translage <source language code> <target language code> <text to translate>
+            Translates the text from the source language to the target language.
+            Example: !translate en fr Hello, my name is Korrok.
+        Format 4: !translate languages
+            WARNING: Obnoxiously long return list via PM
+            Returns a list of the available language codes sent via a PM to the user that requested it
+!urban
+        Get a definition from urbandictionary.com
+        Format 1: !urban random
+        Format 2: !urban wotd
+        Format 3: !urban [word]
+            Example: !urban pteradactle
+!w
+        Gets the weather for a given location.
+        Format: !w [location]
+        Example: !w 90210
+        Example: !w London
+        Example: !w Svolvær
+!weather
+        Alias for !w
