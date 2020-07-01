@@ -9,11 +9,11 @@
 !addautoreply: 
     Create a new Auto Reply.
     Auto Replies are used to have the bot automatically reply whenever it sees someone say something.
-    Format 1: !addautoreply <Regular Expression>
-        This is the first step to adding the autoreply. If the <Regular Expression> value is a valid 
+    Format 1: !addautoreply &lt;Regular Expression&gt;
+        This is the first step to adding the autoreply. If the &lt;Regular Expression&gt; value is a valid 
         Regular Expression, the bot will add it and return an ID number. This should be followed with
         Format 2 using the provided ID number to add the reply.
-    Format 2: !addautoreply <ID number> <Reply text>
+    Format 2: !addautoreply &lt;ID number&gt; &lt;Reply text&gt;
         This completes adding the autoreply by setting the reply text. This format can also be used 
         to update an existing autoreply.
 !addnewssource: 
@@ -88,10 +88,10 @@
     Format: !insult nickname
 !invite: 
     Request an invite to join the #nzbs.in channel.
-    Format 1: !invite <irc_key>
+    Format 1: !invite &lt;irc_key&gt;
         Example: !invite a1s2d3f4g5h6l0k9j8h7g6
         Assumes the channel is #nzbs.in
-    Format 2: !invite <irc_key> <channel>
+    Format 2: !invite &lt;irc_key&gt; &lt;channel&gt;
         Example: !invite a1s2d3f4g5h6l0k9j8h7g6 #announce
         Request an invite to a specific channel
 !join: 
@@ -160,9 +160,9 @@
     Example: !say #nzbs.in Hey longveiw, I hope you had fun in Hawaii!
 !search: 
     Search nzbs.in
-    Format 1: !search <category|subcategory> <search string>
+    Format 1: !search &lt;category|subcategory&gt; &lt;search string&gt;
         Example: !search TV|HD Game of Thrones
-    Format 2: !search <search string>
+    Format 2: !search &lt;search string&gt;
         Example: !search Game of Thrones
     To view the available categories, use '!search categories'
 !sendnzb: 
@@ -199,13 +199,13 @@
     Flip a coin.
 !translate: 
     Translate some text.
-    Format 1: !translate <text to translate>
+    Format 1: !translate &lt;text to translate&gt;
         Translates whatever the text is to English
         Example: !translate Bonjour, je m'appelle Korrok.
-    Format 2: !translate <target language code> <text to translate>
+    Format 2: !translate &lt;target language code&gt; &lt;text to translate&gt;
         Translates the text to the target language
         Example: !translate fr Hello, my name is Korrok.
-    Format 3: !translage <source language code> <target language code> <text to translate>
+    Format 3: !translage &lt;source language code&gt; &lt;target language code&gt; &lt;text to translate&gt;
         Translates the text from the source language to the target language.
         Example: !translate en fr Hello, my name is Korrok.
     Format 4: !translate languages
