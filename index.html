@@ -1,26 +1,26 @@
 <pre>
-!8ball:
+!8ball: 
     Magic 8 Ball.
     Ask a question like &quot;!8ball Will I ever lose my virginity?&quot;
-!addalias:
+!addalias: 
     Add an alias for an existing command.
     Format: !addalias datgap img datgap
         Once successfully added, a user could use !datgap to call the same as !img datgap
-!addautoreply:
+!addautoreply: 
     Create a new Auto Reply.
     Auto Replies are used to have the bot automatically reply whenever it sees someone say something.
     Format 1: !addautoreply &lt;Regular Expression&gt;
-        This is the first step to adding the autoreply. If the &lt;Regular Expression&gt; value is a valid
+        This is the first step to adding the autoreply. If the &lt;Regular Expression&gt; value is a valid 
         Regular Expression, the bot will add it and return an ID number. This should be followed with
         Format 2 using the provided ID number to add the reply.
     Format 2: !addautoreply &lt;ID number&gt; &lt;Reply text&gt;
-        This completes adding the autoreply by setting the reply text. This format can also be used
+        This completes adding the autoreply by setting the reply text. This format can also be used 
         to update an existing autoreply.
-!addquickreply:
+!addquickreply: 
     Create a new Quick Reply.
     Quick Replies are used to give quick answers to commonly asked questions.
     Format: !addquickreply trigger This is the text of the quick reply.
-!addshow:
+!addshow: 
     Add a new TV show to the bot&#x27;s database
     Format 1: !addshow showname
         This will search for the show by name and return the top 3 results
@@ -29,33 +29,33 @@
         Showid should be the show&#x27;s ID number from tvmaze. It will be returned in the search
         results from format 1. This will actually add the show to the database.
         Example: !addshow 557
-!boobies:
+!boobies: 
     Get a random image from the subreddit /r/Boobies
-!boobiesnail:
+!boobiesnail: 
     Get kloaknet&#x27;s favorite image.
-!boobiesnails:
+!boobiesnails: 
     Get kloaknet&#x27;s favorite image.
-!btc:
+!btc: 
     Get the current value of Bitcoin in USD.
-!chuck:
+!chuck: 
     Get a random Chuck Norris joke.
-!coin:
+!coin: 
     Get the current value of some cryptocurrency
     Format: !coin &lt;symbol or slug&gt;
     Example: !coin BTC
     Example: !coin Bitcoin
-!colors:
+!colors: 
     Get an example of all of the colors possible for text in IRC.
-!corona:
+!corona: 
     Get some statistics of the COVID-19 pandemic
-!ctof:
+!ctof: 
     Convert Celsius to Fahrenheit
-!deletealias:
+!deletealias: 
     Delete an alias command
-!deletequickreply:
+!deletequickreply: 
     Remove a quick reply.
     Format: !deletequickreply trigger
-!deleteshow:
+!deleteshow: 
     Delete a show from the bot&#x27;s tv show database.
     Format 1: !deleteshow &lt;showname&gt;
         This will just return a list of shows that match the given showname.
@@ -65,37 +65,37 @@
     Format 2: !deleteshow &lt;showid&gt;
         This will actually delete any show that has the supplied show ID.
         Example: !deleteshow 801
-!editquickreply:
+!editquickreply: 
     Edit an existing quick reply.
     Format 1: !editquickreply name
          This will just echo what the current quick reply text.
     Format 2: !editquickreply name The text of the quick reply.
     This will just replace the current quick reply text with the new text.
-!fact:
+!fact: 
     Get a random fact from randomfunfacts.com
-!ftoc:
+!ftoc: 
     Convert Fahrenheit to Celsius
-!hawaii:
+!hawaii: 
     How long until longveiw and his new wife go to Hawaii?
     BTW, they went back in 2014 so this is just a relic.
-!help:
+!help: 
     Get this help.
-!image:
+!image: 
     Get an image from a given subreddit.
     Format: !image subredditname
     Example: !image ramen
-!imdb:
+!imdb: 
     Search for info on a movie from imdb.com
     Format: !imdb Movie Title
-!imgur:
+!imgur: 
     Get a random image from a given subreddit from imgur.
     No longer works for nsfw subreddits
     Format: !imgur subredditname
     Example: !imgur snails
-!insult:
+!insult: 
     Tell Korrok to insult someone.
     Format: !insult nickname
-!invite:
+!invite: 
     Request an invite to join the #nzbs.in channel.
         Format 1: !invite &lt;irc_key&gt;
         Example: !invite a1s2d3f4g5h6l0k9j8h7g6
@@ -103,48 +103,54 @@
     Format 2: !invite &lt;irc_key&gt; &lt;channel&gt;
         Example: !invite a1s2d3f4g5h6l0k9j8h7g6 #announce
         Request an invite to a specific channel
-!join:
+!join: 
     Tell the bot to join a channel.
     Format: !join #channelname
-!kick:
+!kick: 
     Tell the bot to kick someone from a channel.
     Format !kick nickname
-!kmtom:
+!kmtom: 
     Convert kilometers to miles
-!lastsaid:
+!lastsaid: 
     What was the last thing the bot heard someone with the given nickname say?
     Format: !lastsaid nickname
-!lastseen:
+!lastseen: 
     When was the last time the bot saw someone with the given nickname?
     Format: !lastseen nickname
-!lastspoke:
+!lastspoke: 
     When was the last time the bot saw someone with the given nickname speak in a channel?
     !Format: !lastspoke nickname
-!leave:
+!leave: 
     Tell the bot to leave a given channel.
     Format: !leave #channelname
-!logverbose:
+!logverbose: 
     Tell the bot to start logging more data (for debugging)
-!mtokm:
+!mtokm: 
     Convert miles to kilometers
-!nick:
+!next: 
+    Get details on the next episode of a TV show
+    Example: !next Game of Thrones
+!nick: 
     Tell the bot to change its nickname.
     Format: !nick nickname
-!nzbsearch:
+!nzbsearch: 
     Search nzbs.in
     Format 1: !nzbsearch &lt;category|subcategory&gt; &lt;search string&gt;
         Example: !nzbsearch TV|HD Game of Thrones
     Format 2: !nzbsearch &lt;search string&gt;
         Example: !nzbsearch Game of Thrones
     To view the available categories, use &#x27;!nzbsearch categories&#x27;
-!quit:
+!previous: 
+    Get details on the previous episode of a TV show
+    Example: !previous Game of Thrones
+!quit: 
     Tell the bot to quit leave all channels and disconnect from the server.
-!redditimage:
+!redditimage: 
     Get a random image from a given subreddit.
     Replacement for imgur to get nsfw content.
     Format: !redditimage subredditname
     Example: !redditimage butts
-!roll:
+!roll: 
     Roll two regular 6-sided dice.
     Or pick how many sides and how many die to roll
     Example: !roll
@@ -153,14 +159,14 @@
         Rolls one 12-sided dice
     Example: !roll 12 3
         Rolls 3 12-sided die
-!roulette:
+!roulette: 
     Play Russian Roulette. If you get shot, you get kicked from the channel. (If the bot is op in the channel)
     Format: !roulette
-!say:
+!say: 
     Tell the bot to say something in the given channel
     Format: !say channel Message
     Example: !say #nzbs.in Hey longveiw, I hope you had fun in Hawaii!
-!search:
+!search: 
     Search the internet using some search engine (Google by default)
     Format 1: !search &lt;search term&gt;
         Example: !search What is the meaning of life?
@@ -168,7 +174,7 @@
         Example: !search wikipedia Antelope
     Format 3: !search engines
         Returns a list of available search engines
-!sendnzb:
+!sendnzb: 
     Send an NZB to your download client (if you&#x27;re registered with the bot).
     Format 1: !sendnzb Search terms
         Example: !sendnzb The Matrix 1999
@@ -178,27 +184,27 @@
         Send a specific nzb. The guid can be obtained by using the !search command.
     Format 2: !sendnzb reset
         Reset your own sendnzb information (aka, delete your user information)
-!slap:
+!slap: 
     Tell the bot to slap someone with something unpleasant
-!snailtit:
+!snailtit: 
     Get kloaknet&#x27;s favorite image
-!snailtits:
+!snailtits: 
     Get kloaknet&#x27;s favorite image
-!stock:
+!stock: 
     Get stock market info for a given ticker symbol
-!time:
+!time: 
     Get the current time for a given location
     Format: !time [location]
     Example: !time 90210
     Example: !time London
     Example: !time Svolvær
-!today:
+!today: 
     Get a list of shows with episodes airing today.
-!tomorrow:
+!tomorrow: 
     Get a list of shows with episodes airing tomorrow.
-!toss:
+!toss: 
     Flip a coin.
-!translate:
+!translate: 
     Translate some text.
     Format 1: !translate &lt;text to translate&gt;
         Translates whatever the text is to English
@@ -212,7 +218,7 @@
     Format 4: !translate languages
         WARNING: Obnoxiously long return list via PM
         Returns a list of the available language codes sent via a PM to the user that requested it
-!trivia:
+!trivia: 
     Have the bot ask a trivia question.
     Format 1: !trivia
         Just get a random trivia question
@@ -221,18 +227,104 @@
         Example: !trivia Math
     Format 3: !trivia categories
         Get a list of available categories
-!urban:
+!urban: 
     Get a definition from urbandictionary.com
     Format 1: !urban random
     Format 2: !urban wotd
     Format 3: !urban [word]
         Example: !urban pteradactle
-!w:
+!w: 
     Gets the weather for a given location.
     Format: !w [location]
     Example: !w 90210
     Example: !w London
     Example: !w Svolvær
-!yesterday:
+!yesterday: 
     Get a list of shows with episodes that aired yesterday.
+
+
+Aliases:
+
+!datgap:
+	!image datgap
+!vag:
+	!image pussy
+!pussy:
+	!image pussy
+!corgi:
+	!image corgi
+!bewbies:
+	!image boobies
+!bewbiez:
+	!image boobies
+!bitcoin:
+	!btc
+!boobs:
+	!image boobies
+!butts:
+	!image ass
+!commands:
+	!help
+!img:
+	!image
+!s:
+	!search
+!seen:
+	!lastseen
+!weather:
+	!w
+!penis:
+	!image penis
+!pawg:
+	!image pawg
+!covid:
+	!corona
+!wuflu:
+	!corona
+!meme:
+	!redditimage meme
+!banhammer:
+	!kick
+!tonight:
+	!today
+!petite:
+	!image petite
+!at&tgirl:
+	!image milanavayntrub
+!attgirl:
+	!image milanavayntrub
+!g:
+	!search
+!y:
+	!search yahoo
+!duck:
+	!search duckduckgo
+!tits:
+	!image boobies
+!last:
+	!previous
+!eyebleach:
+	!image eyebleach
+!twink:
+	!image twinks
+!twinks:
+	!image twinks
+!poorboy:
+	!image rollerskating
+!yuri:
+	!image wholesomeyuri
+!boypussy:
+	!image boypussy
+!femboy:
+	!image femboy
+!trap:
+	!image trap
+!cats:
+	!image cats
+!puppies:
+	!image puppies
+!aww:
+	!image aww
+!rr:
+	!roulette
 </pre>
