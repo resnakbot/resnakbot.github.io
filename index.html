@@ -31,6 +31,11 @@
         Showid should be the show&#x27;s ID number from tvmaze. It will be returned in the search
         results from format 1. This will actually add the show to the database.
         Example: !addshow 557
+!blockinvite: 
+    ***Only works for admin users***
+    Block a user from getting an invite from korrok to join a channel
+    Format: !blockinvite &lt;username&gt;
+    Example: !blockinvite coop05
 !boobies: 
     Get a random image from the subreddit /r/Boobies
 !boobiesnail: 
@@ -69,12 +74,22 @@
     Format 2: !deleteshow &lt;showid&gt;
         This will actually delete any show that has the supplied show ID.
         Example: !deleteshow 801
+!disable: 
+    ***Only works for admin users***
+    Disable a user&#x27;s 2fa, account, api or invite
+    Format: !disable &lt;2fa|account|api|invite&gt; &lt;username&gt;
+    Example: !disable invite coop05
 !editquickreply: 
     Edit an existing quick reply.
     Format 1: !editquickreply name
          This will just echo what the current quick reply text.
     Format 2: !editquickreply name The text of the quick reply.
     This will just replace the current quick reply text with the new text.
+!enable: 
+    ***Only works for admin users***
+    Enable a user&#x27;s 2fa, account, api or invite
+    Format: !enable &lt;2fa|account|api|invite&gt; &lt;username&gt;
+    Example: !enable invite coop05
 !fact: 
     Get a random fact from randomfunfacts.com
 !ftoc: 
@@ -97,10 +112,10 @@
 !intocm: 
     Convert inches to centimeters
 !invite: 
-    Request an invite to join the main channel.
+    Request an invite to join the #main channel.
     Format 1: !invite &lt;irc_key&gt;
         Example: !invite a1s2d3f4g5h6l0k9j8h7g6
-        Assumes the channel is the main channel
+        Assumes the channel is #main
     Format 2: !invite &lt;irc_key&gt; &lt;channel&gt;
         Example: !invite a1s2d3f4g5h6l0k9j8h7g6 #announce
         Request an invite to a specific channel
@@ -126,6 +141,9 @@
     Format: !leave #channelname
 !logverbose: 
     Tell the bot to start logging more data (for debugging)
+!longveiw: 
+    Leave a message for longveiw (may he rest in peace)
+    Example: !longveiw Remember that time we ...
 !mtokm: 
     Convert miles to kilometers
 !next: 
@@ -135,7 +153,7 @@
     Tell the bot to change its nickname.
     Format: !nick nickname
 !nzbsearch: 
-    Search the site for an nzb
+    Search the site
     Format 1: !nzbsearch &lt;category|subcategory&gt; &lt;search string&gt;
         Example: !nzbsearch TV|HD Game of Thrones
     Format 2: !nzbsearch &lt;search string&gt;
@@ -146,8 +164,17 @@
     Example: !previous Game of Thrones
 !quit: 
     Tell the bot to quit leave all channels and disconnect from the server.
-!randomquote: 
+!quote: 
     Get a random quote from the bot&#x27;s database
+    Or, get a quote that matches some search term
+    Format 1:
+        !quote
+    Format 2:
+        !quote &lt;search term&gt;
+        Example:
+            !quote incest
+        Example:
+            !quote longveiw
 !redditimage: 
     Get a random image from a given subreddit.
     Replacement for imgur to get nsfw content.
@@ -168,7 +195,7 @@
 !say: 
     Tell the bot to say something in the given channel
     Format: !say channel Message
-    Example: !say #chat Hey user, I hope you had fun in Hawaii!
+    Example: !say #main Hey longveiw, I hope you had fun in Hawaii!
 !search: 
     Search the internet using some search engine (Google by default)
     Format 1: !search &lt;search term&gt;
@@ -231,7 +258,12 @@
     Format 3: !trivia categories
         Get a list of available categories
 !tv: 
-    Get info about a given TV show
+    Get info about a given TV show, episode, or season
+!unblockinvite: 
+    ***Only works for admin users***
+    Remove the channel invite block for a user
+    Format: !unblockinvite &lt;username&gt;
+    Example: !unblockinvite coop05
 !urban: 
     Get a definition from urbandictionary.com
     Format 1: !urban random
@@ -246,10 +278,14 @@
     Example: !w Svolvær
 !yesterday: 
     Get a list of shows with episodes that aired yesterday.
+!youtube: 
+    Search for videos on YouTube
 
 
 ---- Aliases: ---------------------------------------------------------------------
 
+!60+:
+	!image 60plusgonewild
 !at&tgirl:
 	!image milanavayntrub
 !attgirl:
@@ -258,6 +294,8 @@
 	!image aww
 !banhammer:
 	!kick
+!beef_flaps:
+	!image beef_flaps
 !bewbies:
 	!image boobies
 !bewbiez:
@@ -284,12 +322,28 @@
 	!coin
 !datgap:
 	!image datgap
+!disable2fa:
+	!disable 2fa
+!disableaccount:
+	!disable account
+!disableapi:
+	!disable api
+!disableinvite:
+	!disable invite
 !doge:
 	!coin doge
 !dot:
 	!coin dot
 !duck:
 	!search duckduckgo
+!enable2fa:
+	!enable 2fa
+!enableaccount:
+	!enable account
+!enableapi:
+	!enable api
+!enableinvite:
+	!enable invite
 !eth:
 	!coin eth
 !eyebleach:
@@ -297,13 +351,17 @@
 !femboy:
 	!image femboy
 !g:
-	!search
+	!search google
 !gbi:
 	!say gangsta broke it
+!gme:
+	!stock gme
 !img:
 	!image
 !last:
 	!previous
+!ltc:
+	!coin ltc
 !meme:
 	!redditimage meme
 !pawg:
@@ -318,8 +376,6 @@
 	!image puppies
 !pussy:
 	!image pussy
-!quote:
-	!randomquote
 !rr:
 	!roulette
 !s:
@@ -354,6 +410,8 @@
 	!corona
 !y:
 	!search yahoo
+!yandere:
+	!image yandere
 !yaoi:
 	!image yaoi
 !yuri:
